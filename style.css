@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Cabin;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: url(https://www.mitchellcounty.org/wp-content/uploads/2018/04/Calendar-Background.jpg)
+}
+
+.container {
+  width: 450px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 2%;
+}
+
+.month {
+  display: flex;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  background:#f1f1f1;
+  margin: 10px;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  cursor: pointer;
+  border-radius: 30%;
+}
+button:hover{
+  transform: scale(1.2);
+
+}
+.inserted_month {
+  width: 300px;
+  text-align: center;
+}
+.day_red {
+  color:#dd0b43;
+}
+
+.container_days {
+  margin-left: 150px;
+}
+
+.container_days li {
+  margin: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="https://momentjs.com/downloads/moment.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+</head>
+  <body>
+    <div class="container">
+
+      <div class="month">
+        <button class="back" type="button" name="button"> precedente</button>
+          <div class="inserted_month"></div>
+        <button class="after" type="button" name="button"> successivo</button>
+      </div>
+
+      <div class="container_days">
+        <ul class="inserted_days">
+        </ul>
+      </div>
+    </div>
+
+    <script id="month" type="text/x-handlebars-template">
+      <h2>{{nome_mese}} 2018</h2>
+    </script>
+
+    <script id="day" type="text/x-handlebars-template">
+      <li date-day ="{{giorno_data}}">{{giorno}} {{mese}}</li>
+    </script>
+
+    <script src="main.js" charset="utf-8"></script>
+
+  </body>
+</html>
